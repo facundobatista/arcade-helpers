@@ -3,7 +3,7 @@ class KeyManager:
 
     Must be instantiated with the main window.
 
-    Provides the following method:
+    Provides the following methods:
     - `is_pressed(key)`: to find out if the indicated key is currently pressed
     - `on_release(key, function, *args, **kwargs)`: will call the indicated function
       when that key is released, pasing any indicated positional and/or keyword arguments.
