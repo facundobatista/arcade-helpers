@@ -1,3 +1,7 @@
+# Copyright 2021-2023 Facundo Batista
+# Licensed under the GPL v3 License
+# For further info, check https://github.com/facundobatista/pyempaq
+
 import math
 
 import arcade

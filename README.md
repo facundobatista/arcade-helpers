@@ -86,3 +86,26 @@ The example presents a single sprite in the screen (a space ship) with a de-cent
 Some keys are hook in the example: the `left` and `right` arrows will rotate the ship gradually (the `up` arrow gives velocity, if you want to fly the ship), while the `r` and `l` keys will rotate it in 90° steps.
 
 Also, the mouse is hooked. Clicking anywhere in the screen will move the ship in a way that the rotation point is in the clicked position.
+
+
+## Collision Dynamics Between Sprites
+
+**Function**: `arcade_helpers.particles_collision.collide`
+
+**Dependency**: `numpy`
+
+Collide two sprites using collision dynamics.
+
+Linear and angular velocities will be adjusted for both sprites.
+
+This function implements the equation 3.16 from book "Computational Granular Dynamics" by Thorsten Pöschel and Thomas Schwager (Springer, 2004) with the following simplifications: R=1, J̃=1.
+
+### Example:
+
+**See:** `examples/collision_ships.py`
+
+The example presents a two space ships facing each other. These ships are controlled using `a/d/w` keys (left one) and the `left/right/up` arrow keys (right one).
+
+Just go a smash both ships together and see how the behave after colliding.
+
+Most of the example is about drawing space ships thrusts and handling keys. The relevant for the functionality is in the `on_update` method where collision is checked, and it that case the `collide` function is called.

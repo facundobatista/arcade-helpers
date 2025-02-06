@@ -1,3 +1,7 @@
+# Copyright 2023-2025 Facundo Batista
+# Licensed under the Apache v2 License
+# For further info, check https://github.com/facundobatista/arcade-helpers
+
 import arcade
 
 from arcade_helpers import key_manager
